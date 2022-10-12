@@ -24,6 +24,7 @@ Base url is configured in `cypress.config.js`
 can be generic. Example: which item to click in a drop down. - It would be nice if everything could map to an enum, so if the
 text changed, it would only need to be changed in the enum as opposed to all occurences of it. 
 - common functions for things like open link in same tab 
+- CI (GHA pieces)
 
 ## Problems
 1) hovering over the nav bar elements is flaky - even with a realHover()

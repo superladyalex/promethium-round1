@@ -62,7 +62,7 @@ describe('Promethium.ai Tests', () => {
         cy.visit('/') // baseurl is already configured
 
         navBar.openDropdown('Resources', 'Collateral & Webinars')
-        
+
         webinarsPage.downloadFile('Solution For dbt')
 
     })
