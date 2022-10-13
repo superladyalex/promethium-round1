@@ -11,8 +11,13 @@ describe('Promethium.ai Tests', () => {
     let productPage = new ProductPage();
     let webinarsPage = new WebinarsPage();
 
-    it('Ensure Home Page Elements are present and expected values', () => {
+    beforeEach(() => {
+
         cy.visit('/') // baseurl is already configured
+
+    })
+
+    it('Ensure Home Page Elements are present and expected values', () => {
 
         navBar.getLogo().should('be.visible')
         navBar.getTextFromRichText(0).should('have.text', "Promethium Collaborative Data Analytics")
@@ -20,7 +25,6 @@ describe('Promethium.ai Tests', () => {
     })
 
     it('Ensure Registration Page displays proper field level alerts on submit', () => {
-        cy.visit('/') // baseurl is already configured
 
         navBar.clickTryNow()
         registerPage.submitRegistration()
@@ -33,7 +37,6 @@ describe('Promethium.ai Tests', () => {
     })
 
     it('Ensure users can successfully register', () => {
-        cy.visit('/') // baseurl is already configured
 
         navBar.clickTryNow()
 
@@ -49,7 +52,6 @@ describe('Promethium.ai Tests', () => {
     })
 
     it('Verify Datasouces', () => {
-        cy.visit('/') // baseurl is already configured
 
         navBar.openDropdown('Product', 'Data Connectors')
 
@@ -59,7 +61,6 @@ describe('Promethium.ai Tests', () => {
     })
 
     it('Download', () => {
-        cy.visit('/') // baseurl is already configured
 
         navBar.openDropdown('Resources', 'Collateral & Webinars')
 
