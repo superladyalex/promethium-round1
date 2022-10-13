@@ -58,7 +58,7 @@ describe('Promethium.ai Tests', () => {
         productPage.getDataSourceValues()  //I do not like the way these assertions are done in the page rather than in the test. this should be changed.
     })
 
-    it.only('Download', () => {
+    it('Download', () => {
         cy.visit('/') // baseurl is already configured
 
         navBar.openDropdown('Resources', 'Collateral & Webinars')
