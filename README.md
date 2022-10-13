@@ -25,6 +25,7 @@ can be generic. Example: which item to click in a drop down. - It would be nice 
 text changed, it would only need to be changed in the enum as opposed to all occurences of it. 
 - common functions for things like open link in same tab 
 - CI (GHA pieces)
+- In collaboration with dev - better selectors - more data-testids for example and less reuse of the same ones
 
 ## Problems
 1) hovering over the nav bar elements is flaky - even with a realHover()
